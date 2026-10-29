@@ -11,9 +11,7 @@ use Illuminate\Http\JsonResponse;
 
 class SaleController extends Controller
 {
-    public function __construct(private SaleService $sales)
-    {
-    }
+    public function __construct(private SaleService $sales) {}
 
     public function index(): JsonResponse
     {
@@ -37,7 +35,7 @@ class SaleController extends Controller
     {
         $sale = Sale::find($id);
 
-        if (!$sale) {
+        if (! $sale) {
             return response()->json(['message' => 'Venta no encontrada'], 404);
         }
 

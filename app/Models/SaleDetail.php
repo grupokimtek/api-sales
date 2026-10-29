@@ -17,7 +17,7 @@ class SaleDetail extends Model
         'subtotal',
         'discount_percent',
         'discount_amount',
-        'subtotal_with_discount'
+        'subtotal_with_discount',
     ];
 
     protected $casts = [

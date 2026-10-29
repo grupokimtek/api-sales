@@ -13,7 +13,7 @@ class Sale extends Model
     protected $fillable = [
         'user_id',
         'total',
-        'total_discount'
+        'total_discount',
     ];
 
     protected $casts = [
